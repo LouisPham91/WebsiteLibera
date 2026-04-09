@@ -2,272 +2,34 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Libera School of Music</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display&display=swap" rel="stylesheet">
-
-<style>
-:root {
-    --primary: #1B3022;
-    --gold: #D4AF37;
-    --light: #F9F7F2;
-    --white: #fff;
-}
-
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Montserrat;background:var(--light)}
-
-h1,h2,h3{font-family:'Playfair Display',serif}
-
-/* NAV */
-header{
-    background:var(--primary);
-    padding:15px 8%;
-    position:sticky;top:0;
-}
-
-.nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    color:white;
-    font-size:24px;
-    font-style:italic;
-}
-.logo span{
-    display:block;
-    font-size:10px;
-    letter-spacing:3px;
-    color:var(--gold);
-}
-
-.nav ul{
-    display:flex;
-    list-style:none;
-}
-.nav a{
-    color:white;
-    margin:0 15px;
-    text-decoration:none;
-    font-size:12px;
-}
-
-.btn{
-    padding:10px 20px;
-    background:var(--gold);
-    color:black;
-    text-decoration:none;
-}
-
-/* HERO */
-.hero{
-    height:80vh;
-    background:
-    linear-gradient(rgba(27,48,34,0.7),rgba(27,48,34,0.7)),
-    url('https://images.pexels.com/photos/210922/pexels-photo-210922.jpeg') center/cover;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:white;
-}
-.hero h1{font-size:48px}
-.hero p{margin:15px 0}
-
-/* SECTION */
-.section{
-    padding:80px 8%;
-}
-.center{text-align:center}
-
-/* INTRO */
-.intro{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-}
-.intro img{
-    width:100%;
-}
-
-/* COURSES */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-.card{
-    background:white;
-}
-.card-img{
-    height:200px;
-    background-size:cover;
-}
-.card-body{padding:20px}
-
-/* FACILITY */
-.facility{
-    background:#fff;
-}
-
-/* TEACHER */
-.teacher{
-    text-align:center;
-}
-.teacher img{
-    width:150px;
-    border-radius:50%;
-}
-
-/* CTA */
-.cta{
-    background:var(--primary);
-    color:white;
-    text-align:center;
-}
-.cta input{
-    padding:10px;
-    margin:10px;
-}
-
-/* FOOTER */
-footer{
-    background:black;
-    color:white;
-    padding:40px;
-    text-align:center;
-}
-</style>
+<title>Libera</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
 <div class="nav">
-    <div class="logo">Libera <span>SCHOOL OF MUSIC</span></div>
-    <ul>
-        <li><a href="#">Trang chủ</a></li>
-        <li><a href="#courses">Khóa học</a></li>
-        <li><a href="#teachers">Giảng viên</a></li>
-        <li><a href="#">Đăng nhập</a></li>
-    </ul>
-    <a href="#cta" class="btn">Đăng ký</a>
+<div class="logo">Libera <span>SCHOOL OF MUSIC</span></div>
+
+<ul>
+<li><a href="index.html">Trang chủ</a></li>
+<li><a href="courses.html">Khóa học</a></li>
+<li><a href="teachers.html">Giảng viên</a></li>
+<li><a href="contact.html">Liên hệ</a></li>
+<li><a href="login.html">Đăng nhập</a></li>
+</ul>
+
+<a href="contact.html" class="btn">Đăng ký</a>
 </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-    <div>
-        <h1>Tinh hoa âm nhạc – Khơi nguồn cảm xúc</h1>
-        <p>Môi trường đào tạo chuẩn học viện</p>
-        <a href="#cta" class="btn">Học thử miễn phí</a>
-    </div>
+<section class="section center">
+<h1>Tinh hoa âm nhạc – Khơi nguồn cảm xúc</h1>
+<p>Trung tâm đào tạo chuẩn học viện</p>
 </section>
 
-<!-- INTRO -->
-<section class="section intro">
-    <img src="https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg">
-    <div>
-        <h2>Về Libera</h2>
-        <p>Trung tâm đào tạo âm nhạc theo tiêu chuẩn học viện với lớp học nhỏ và môi trường chuyên nghiệp.</p>
-    </div>
-</section>
-
-<!-- COURSES -->
-<section class="section" id="courses">
-    <h2 class="center">Chương trình học</h2>
-
-    <div class="grid">
-
-        <div class="card">
-            <div class="card-img" style="background-image:url('https://images.pexels.com/photos/709551/pexels-photo-709551.jpeg')"></div>
-            <div class="card-body">
-                <h3>Piano</h3>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img" style="background-image:url('https://images.pexels.com/photos/713149/pexels-photo-713149.jpeg')"></div>
-            <div class="card-body">
-                <h3>Thanh nhạc</h3>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img" style="background-image:url('https://images.pexels.com/photos/164938/pexels-photo-164938.jpeg')"></div>
-            <div class="card-body">
-                <h3>Cello</h3>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img" style="background-image:url('https://images.pexels.com/photos/164936/pexels-photo-164936.jpeg')"></div>
-            <div class="card-body">
-                <h3>Guitar</h3>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img" style="background-image:url('https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg')"></div>
-            <div class="card-body">
-                <h3>Hợp xướng</h3>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img" style="background-image:url('https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg')"></div>
-            <div class="card-body">
-                <h3>Xylophone</h3>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img" style="background-image:url('https://images.pexels.com/photos/2085354/pexels-photo-2085354.jpeg')"></div>
-            <div class="card-body">
-                <h3>Melodica</h3>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- FACILITY -->
-<section class="section facility">
-    <h2 class="center">Không gian trung tâm</h2>
-    <p class="center">2 phòng học – 16 đàn piano – không gian chuẩn học viện</p>
-</section>
-
-<!-- TEACHER -->
-<section class="section" id="teachers">
-    <h2 class="center">Giảng viên</h2>
-    <div class="grid">
-        <div class="teacher">
-            <img src="https://images.pexels.com/photos/3775534/pexels-photo-3775534.jpeg">
-            <h3>Giảng viên A</h3>
-        </div>
-        <div class="teacher">
-            <img src="https://images.pexels.com/photos/3777946/pexels-photo-3777946.jpeg">
-            <h3>Giảng viên B</h3>
-        </div>
-    </div>
-</section>
-
-<!-- CTA -->
-<section class="section cta" id="cta">
-    <h2>Đăng ký học thử</h2>
-    <input placeholder="Tên">
-    <input placeholder="SĐT">
-    <br>
-    <button class="btn">Gửi thông tin</button>
-</section>
-
-<footer>
-    <p>Libera School of Music</p>
-</footer>
+<footer>Libera School of Music</footer>
 
 </body>
 </html>
